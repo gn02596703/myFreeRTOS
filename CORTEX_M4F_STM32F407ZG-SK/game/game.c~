@@ -63,14 +63,14 @@ BallReset()
 void
 PointReset()
 {		
-		if ( ballX - MX <= 40 || ballX - MX >= LCD_PIXEL_WIDTH-40)
+		if ( ballX - MX <= 20 || ballX - MX >= LCD_PIXEL_WIDTH-20)
 		{
 			MX *= -1;
 			PointX = (LCD_PIXEL_WIDTH / 2) - MX;
 		}
 		else
 			PointX = ballX -MX;
-		if ( ballY - MY <= 40 || ballY - MY >= LCD_PIXEL_HEIGHT-40)
+		if ( ballY - MY <= 20 || ballY - MY >= LCD_PIXEL_HEIGHT-20)
 		{
 			MY *= -1;
 			PointY = (LCD_PIXEL_HEIGHT / 2) - MY;
